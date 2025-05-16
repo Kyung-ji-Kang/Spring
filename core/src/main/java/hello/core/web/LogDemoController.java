@@ -21,7 +21,7 @@ public class LogDemoController {
     public String logDemo(HttpServletRequest request){
         String requestURL = request.getRequestURL().toString();
 
-        System.out.println("myLogger = "+myLogger);
+        System.out.println("myLogger = "+myLogger.getClass());
         myLoggerProxy.setRequestURL(requestURL);
 
         myLoggerProxy.log("controller test");
