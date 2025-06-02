@@ -24,6 +24,7 @@ public class LogDemoController {
         System.out.println("myLogger = "+myLogger.getClass());
         myLoggerProxy.setRequestURL(requestURL);
 
+        //Log
         myLoggerProxy.log("controller test");
         logDemoService.logic("testID");
         return "OK";
